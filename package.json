@@ -1,6 +1,6 @@
 {
   "name": "@konekto/preset-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Babel preset for modern react ap",
   "main": "index.js",
   "scripts": {
