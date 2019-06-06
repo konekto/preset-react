@@ -2,7 +2,6 @@
 const { resolve } = require;
 const ENV = (process.env.BABEL_ENV || process.env.NODE_ENV);
 const isProd = ENV === 'production';
-const isTest = ENV === 'test';
 
 // default supported browser.
 const defaultBrowserList = ['> 0.25%', 'IE >= 9'];
@@ -16,7 +15,6 @@ module.exports = function () {
         resolve('@babel/preset-env'),
         {
           loose: true,
-          modules: isTest ? 'commonjs' : false,
           targets: {
             browsers: defaultBrowserList,
           },
