@@ -1,7 +1,7 @@
 {
-  "name": "preset-react",
+  "name": "@konekto/preset-react",
   "version": "1.0.0",
-  "description": "A Babel preset for modern react apps",
+  "description": "A Babel preset for modern react ap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
