@@ -11,8 +11,8 @@ module.exports = function () {
 
   return {
     presets: [
+      resolve('@babel/preset-typescript'),
       [
-        resolve('@babel/preset-typescript'),
         resolve('@babel/preset-env'),
         {
           loose: true,
@@ -22,7 +22,7 @@ module.exports = function () {
           },
           exclude: ['transform-regenerator', 'transform-async-to-generator'],
         },
-      ],
+      ]
     ],
     plugins: [
       resolve('@babel/plugin-syntax-dynamic-import'),
