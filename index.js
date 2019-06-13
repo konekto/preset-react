@@ -24,6 +24,7 @@ module.exports = function () {
     ],
     plugins: [
       resolve('@babel/plugin-syntax-dynamic-import'),
+      resolve('@babel/plugin-proposal-export-default-from'),
       resolve('@babel/plugin-transform-object-assign'),
       [resolve('@babel/plugin-proposal-decorators'), { legacy: true }],
       [resolve('@babel/plugin-proposal-class-properties'), { loose: true }],
