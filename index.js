@@ -20,7 +20,8 @@ module.exports = function () {
           },
           exclude: ['transform-regenerator', 'transform-async-to-generator'],
         },
-      ]
+      ],
+      resolve('@babel/preset-react')
     ],
     plugins: [
       resolve('@babel/plugin-syntax-dynamic-import'),
@@ -31,7 +32,6 @@ module.exports = function () {
       resolve('@babel/plugin-proposal-object-rest-spread'),
       isProd &&
       resolve('babel-plugin-transform-react-remove-prop-types'),
-      resolve('@babel/plugin-transform-react-jsx'),
       [resolve('fast-async'), { spec: true }],
       resolve('babel-plugin-macros'),
       resolve('react-hot-loader/babel'),
